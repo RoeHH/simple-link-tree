@@ -7,7 +7,7 @@ const mock = Deno.env.get("oauthClientId") ? false : true;
 export default defineConfig({
   plugins: [
     spotifyOauth(
-      Deno.env.get("callbackURL") || "https://shuffle.roeh.ch/oauth2/callback",
+      Deno.env.get("callbackURL") || "https://link.roeh.ch/oauth2/callback",
       {
         scopes: [],
         mock: mock,
