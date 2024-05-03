@@ -9,12 +9,7 @@ export default defineConfig({
     spotifyOauth(
       Deno.env.get("callbackURL") || "https://shuffle.roeh.ch/oauth2/callback",
       {
-        scopes: [
-          "user-library-read",
-          "user-read-playback-state",
-          "user-read-currently-playing",
-          "user-modify-playback-state",
-        ],
+        scopes: [],
         mock: mock,
         oauthClientId: Deno.env.get("oauthClientId") || "",
         oauthClientSecret: Deno.env.get("oauthClientSecret") || "",
