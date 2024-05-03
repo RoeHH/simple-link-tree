@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+@font-palette-values --myPalette {
+  font-family: "Nabla";
+  base-palette: 3;
+  override-colors: 6 #FFC817
+}
+
+body {
+  background-color: #222222;
+  font-family: "Nabla";
+  font-palette: --myPalette;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin: 2vh auto;
+  height: 80vh;
+  width: max-content;
+  max-width: 80vw;
+}
+
+.header {
+  color: #4917ff;
+  font-size: 3em;
+  line-break: strict;
+  user-select: none;
+  text-decoration: none;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  font-size: x-large;
+}
+
+form input {
+  font-size: x-large;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #FFC817;
+  background-color: #222222;
+  color: #FFC817;
+}
+
+form input[type="submit"]{
+  grid-column: span 2;
+}
+
+ul {
+  margin: 0 auto;
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+ul li::marker {
+  color: #FFC817;
+}
+
+ul li a {
+  font-size: x-large;
+  user-select: none;
+  text-decoration-color: #FFC817;
+}
