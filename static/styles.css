@@ -1,15 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
-
-@font-palette-values --myPalette {
-  font-family: "Nabla";
-  base-palette: 3;
-  override-colors: 6 #FFC817
+@font-face {
+    font-family: 'Unmoor Outline';
+    src: url('UnmoorOutlineThin.eot');
+    src: local('Unmoor Outline Thin'), local('UnmoorOutlineThin'),
+        url('UnmoorOutlineThin.eot?#iefix') format('embedded-opentype'),
+        url('UnmoorOutlineThin.woff2') format('woff2'),
+        url('UnmoorOutlineThin.woff') format('woff'),
+        url('UnmoorOutlineThin.ttf') format('truetype');
+    font-weight: 100 !important;
+    font-style: normal;
+    font-display: swap;
 }
 
+
 body {
+  font-family: 'Unmoor Outline', sans-serif;
+  color: #D2B48C;
   background-color: #222222;
-  font-family: "Nabla";
-  font-palette: --myPalette;
   margin: 0;
   padding: 0;
   display: flex;
@@ -19,14 +25,19 @@ body {
   height: 80vh;
   width: max-content;
   max-width: 80vw;
+  overflow-x: clip;
 }
 
 .header {
-  color: #4917ff;
+  color: #D2B48C;
+  font-weight: 100 !important;
+  line-break: anywhere;
   font-size: 3em;
   line-break: strict;
   user-select: none;
   text-decoration: none;
+  overflow-x: clip;
+
 }
 
 form {
@@ -56,11 +67,12 @@ ul {
 }
 
 ul li::marker {
-  color: #FFC817;
+  color: #D2B48C;
 }
 
 ul li a {
+  color: #D2B48C;
   font-size: x-large;
   user-select: none;
-  text-decoration-color: #FFC817;
+  text-decoration-color: #D2B48C;
 }
