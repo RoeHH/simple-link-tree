@@ -80,9 +80,14 @@ ul li a {
 @media screen and (max-width: 600px){
   body {
     width: 100vw;
+    max-width: 100vw;
     margin: 0;
   }
+  h1 {
+    text-align: center;
+  }
   .header {
+    margin: 0 auto;
     font-size: 2em;
   }
   form {
